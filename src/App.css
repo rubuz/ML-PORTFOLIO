@@ -61,3 +61,125 @@
     --fs-smaller: 0.75rem;
   }
 }
+
+/* BASE CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-normal);
+}
+
+body {
+  background-color: var(--clr-body);
+  color: var(--clr-text);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-title);
+  font-weight: var(--fw-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* REUSABLE CSS */
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--fs-h1);
+  color: var(--clr-title);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--fs-small);
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* LAYOUTS */
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  background-color: var(--clr-title);
+  color: var(--clr-container);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--fw-medium);
+}
+
+.button:hover {
+  background-color: var(--clr-title-dark);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* / BREAKPOINTS / */
+/* For large devices */
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}
