@@ -21,6 +21,11 @@
   font-weight: var(--fw-medium);
 }
 
+.nav__logo span {
+  color: var(--clr-highlight);
+  font-weight: var(--fw-semi-bold);
+}
+
 .nav__list {
   display: flex;
   column-gap: 2rem;

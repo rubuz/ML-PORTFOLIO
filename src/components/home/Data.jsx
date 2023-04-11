@@ -10,7 +10,7 @@ const Data = () => {
         Brežice, Slovenia
       </p>
       <a href="#contact" className="button button--flex">
-        Say Hello <i className="uil uil-message"></i>
+        Say Hello <i className="uil uil-message button__icon"></i>
       </a>
     </div>
   );

@@ -9,7 +9,7 @@ function Header() {
     <header className="header">
       <nav className="nav container">
         <a href="index.hmtl" className="nav__logo">
-          ML.Portfolio
+          <span>ML</span>.Portfolio
         </a>
 
         <div className={showMenu ? "nav__menu show-menu" : "nav__menu"}>
