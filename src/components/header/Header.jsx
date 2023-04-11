@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.hmtl" className="nav__logo">
+        <a href="index.html" className="nav__logo">
           <span>ML</span>.Portfolio
         </a>
 
