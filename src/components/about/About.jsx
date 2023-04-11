@@ -15,10 +15,16 @@ const About = () => {
           <MyInfo />
 
           <p className="about__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            similique quasi dolor minus modi error nulla, commodi architecto
-            incidunt quidem dicta molestiae, tempora fugit aliquid omnis nisi
-            suscipit neque quam!
+            I am an IT engineer transitioning to front-end web development with
+            a passion for creating intuitive and engaging user interfaces. As a
+            self-taught developer, I have a strong foundation in HTML, CSS, and
+            JavaScript, and I am currently gaining experience in React. <br />
+            <br /> I am committed to continuous learning and growth, and I
+            believe that collaboration is essential to success. With strong
+            communication skills and a dedication to delivering high-quality
+            results, I am excited to bring my skills and expertise to new
+            projects and contribute to the growth and success of any
+            organization I work with.
           </p>
 
           <a download="" href={CV} className="button button--flex">

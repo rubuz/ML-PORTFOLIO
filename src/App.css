@@ -27,7 +27,7 @@
   --fs-normal: 1rem;
   --fs-small: 0.875rem;
   --fs-smaller: 0.813rem;
-  --fs-tiny: 0.625;
+  --fs-tiny: 0.625rem;
 
   --fw-normal: 400;
   --fw-medium: 500;
@@ -186,8 +186,15 @@ img {
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
   .section {
     padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
   }
 }
 
