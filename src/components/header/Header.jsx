@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 
 function Header() {
@@ -11,7 +11,24 @@ function Header() {
 
   // Toggle menu
   const [showMenu, setShowMenu] = useState(false);
+
   const [activeNav, setActiveNav] = useState("#home");
+
+  // Dark theme toggle
+
+  const [theme, setTheme] = useState("light-theme");
+
+  const toggleTheme = () => {
+    if (theme === "dark-theme") {
+      setTheme("light-theme");
+    } else {
+      setTheme("dark-theme");
+    }
+  };
+
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
 
   return (
     <header className="header">
@@ -69,6 +86,13 @@ function Header() {
               >
                 <i className="uil uil-message nav__icon"></i> Contact
               </a>
+            </li>
+            <li className="nav__item" onClick={toggleTheme}>
+              {theme === "light-theme" ? (
+                <i class="uil uil-sun theme-toggle nav__link"></i>
+              ) : (
+                <i class="uil uil-moon theme-toggle nav__link"></i>
+              )}
             </li>
           </ul>
 
