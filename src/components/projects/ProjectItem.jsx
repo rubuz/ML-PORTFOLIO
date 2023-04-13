@@ -9,7 +9,7 @@ const ProjectItem = ({ item }) => {
         className="project__img"
       />
       <h3 className="project__title">{item.title}</h3>
-      <a href="#" className="project__button">
+      <a href={item.url} className="project__button" target="_blank">
         Demo
         <i class="bx bx-chevron-right project__button-icon"></i>
       </a>

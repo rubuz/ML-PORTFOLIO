@@ -1,3 +1,8 @@
+#home {
+  min-height: 100vh;
+  display: grid;
+}
+
 .home__container {
   row-gap: 7rem;
 }
@@ -16,7 +21,7 @@
 }
 
 .home__social-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--clr-title);
 }
 
@@ -159,8 +164,8 @@
     order: initial;
     justify-self: initial;
     box-shadow: inset 0 0 0 7px rgb(255 130 169 / 30%);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 
   .home__data {
@@ -168,7 +173,7 @@
   }
 
   .home__scroll {
-    display: none;
+    margin: 0 auto;
   }
 }
 
