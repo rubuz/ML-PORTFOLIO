@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
 
+const getStorageTheme = () => {
+  let theme = "light-theme";
+  if (localStorage.getItem("theme")) {
+    theme = localStorage.getItem("theme");
+  }
+};
+
 function Header() {
   // Header background
   window.addEventListener("scroll", function () {
@@ -16,7 +23,7 @@ function Header() {
 
   // Dark theme toggle
 
-  const [theme, setTheme] = useState("light-theme");
+  const [theme, setTheme] = useState(getStorageTheme());
 
   const toggleTheme = () => {
     if (theme === "dark-theme") {
@@ -28,6 +35,7 @@ function Header() {
 
   useEffect(() => {
     document.documentElement.className = theme;
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   return (
