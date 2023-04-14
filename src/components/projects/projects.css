@@ -15,6 +15,12 @@
   width: 295px;
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project__img:hover {
+  border-radius: 0;
 }
 
 .project__title {
@@ -43,6 +49,66 @@
 
 .project__button:hover .project__button-icon {
   transform: translateX(0.25rem);
+}
+
+/* MODAL */
+
+.project__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.project__modal-content {
+  width: 500px;
+  position: relative;
+  background-color: var(--clr-container);
+  padding: 2.5rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.project__modal-content__description {
+  margin-bottom: 0.5rem;
+}
+
+.project__modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--clr-title);
+  cursor: pointer;
+}
+
+.project__modal-content-tech {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.tech-title {
+  color: var(--clr-title);
+  font-weight: var(--fw-medium);
+}
+
+.project__modal-content-tech li {
+  font-size: var(--fs-smaller);
+}
+
+.active__modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* / BREAKPOINTS / */
