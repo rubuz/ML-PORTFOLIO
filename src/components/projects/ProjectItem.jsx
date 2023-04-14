@@ -16,7 +16,7 @@ const ProjectItem = ({ item }) => {
           className="project__img"
         />
         <div className="project__img-layer">
-          <p className="project__img-layer__text">View More</p>
+          <p className="project__img-layer__text">Read More</p>
         </div>
       </div>
       <h3 className="project__title">{item.title}</h3>
