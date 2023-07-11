@@ -20,6 +20,7 @@
   --clr-body: hsl(0, 0%, 98%);
   --clr-container: #fff;
   --clr-highlight: hsl(341, 100%, 75%);
+  --clr-bg-animation: hsl(340, 100%, 95%);
 
   /* typography */
   --ff-primary: "Poppins", sans-serif;
@@ -82,6 +83,7 @@
   --clr-body: hsl(0, 0%, 10%);
   --clr-container: hsl(0, 0%, 20%);
   --clr-highlight: hsl(341, 100%, 75%);
+  --clr-bg-animation: hsl(0, 0%, 19%);
 }
 
 .dark-theme .contact__form-input {

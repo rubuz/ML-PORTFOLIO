@@ -22,7 +22,7 @@
   width: 20px;
   height: 20px;
   /* background: rgba(255, 255, 255, 0.2); */
-  background: hsl(340, 100%, 95%);
+  background: var(--clr-bg-animation);
   opacity: 0;
   animation: animate 25s linear infinite;
   bottom: -150px;
