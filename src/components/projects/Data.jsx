@@ -3,6 +3,7 @@ import Project2 from "../../assets/project2.png";
 import Project3 from "../../assets/project3.png";
 import Project4 from "../../assets/project4.png";
 import Project5 from "../../assets/project5.png";
+import Project6 from "../../assets/project6.png";
 
 export const projectsData = [
   {
@@ -16,13 +17,24 @@ export const projectsData = [
     },
   },
   {
+    id: 6,
+    image: Project6,
+    title: "Manufacture produciton counter",
+    url: "https://64ad08922860724ffa46bafc--delicate-frangipane-60682b.netlify.app/",
+    modal: {
+      description:
+        "The automotive production counter connects to the company's ERP system via API to display real-time production progress on the manufacturing line.",
+      tech: ["HTML5", "CSS3", "Javascript", "ReactJS"],
+    },
+  },
+  {
     id: 2,
     image: Project2,
     title: "Tenzies",
     url: "https://hilarious-semifreddo-72ccdd.netlify.app",
     modal: {
       description: "Small game made with ReactJS.",
-      tech: ["ReactJS"],
+      tech: ["HTML5", "CSS3", "Javascript", "ReactJS"],
     },
   },
   {
