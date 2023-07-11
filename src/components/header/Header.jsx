@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./header.css";
 
 const getStorageTheme = () => {
@@ -18,7 +18,6 @@ function Header() {
 
   // Toggle menu
   const [showMenu, setShowMenu] = useState(false);
-
   const [activeNav, setActiveNav] = useState("#home");
 
   // Dark theme toggle
@@ -38,8 +37,33 @@ function Header() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  // active scrool navbar
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveNav(`#${entry.target.id}`);
+          }
+        });
+      },
+      { rootMargin: "-50% 0px -50% 0px" }
+    );
+
+    const sections = document.querySelectorAll("section");
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className="header" ref={headerRef}>
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
           <span>ML</span>.Portfolio
@@ -97,9 +121,9 @@ function Header() {
             </li>
             <li className="nav__item" onClick={toggleTheme}>
               {theme === "light-theme" ? (
-                <i class="uil uil-sun theme-toggle nav__link"></i>
+                <i className="uil uil-sun theme-toggle nav__link"></i>
               ) : (
-                <i class="uil uil-moon theme-toggle nav__link"></i>
+                <i className="uil uil-moon theme-toggle nav__link"></i>
               )}
             </li>
           </ul>
@@ -113,7 +137,7 @@ function Header() {
           className={showMenu ? "nav__toggle hide-icon" : "nav__toggle "}
           onClick={() => setShowMenu(!showMenu)}
         >
-          <i class="uil uil-bars"></i>
+          <i className="uil uil-bars"></i>
         </div>
       </nav>
     </header>
