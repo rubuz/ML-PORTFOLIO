@@ -8,7 +8,7 @@ const ProjectItem = ({ item }) => {
   };
 
   return (
-    <div className="project__card" key={item.id}>
+    <div className="project__card">
       <div className="project__img-container" onClick={() => toggleTab(true)}>
         <img
           src={item.image}
@@ -22,7 +22,7 @@ const ProjectItem = ({ item }) => {
       <h3 className="project__title">{item.title}</h3>
       <a href={item.url} className="project__button" target="_blank">
         Demo
-        <i class="bx bx-chevron-right project__button-icon"></i>
+        <i className="bx bx-chevron-right project__button-icon"></i>
       </a>
 
       <div
@@ -44,12 +44,12 @@ const ProjectItem = ({ item }) => {
             </ul>
           </div>
           <i
-            class="uil uil-times project__modal-close"
+            className="uil uil-times project__modal-close"
             onClick={() => toggleTab(false)}
           ></i>
           <a href={item.url} className="project__button" target="_blank">
             Demo
-            <i class="bx bx-chevron-right project__button-icon"></i>
+            <i className="bx bx-chevron-right project__button-icon"></i>
           </a>
         </div>
       </div>
