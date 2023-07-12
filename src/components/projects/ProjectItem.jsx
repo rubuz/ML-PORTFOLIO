@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProjectItem = ({ item }) => {
   const [toggleState, setToggleState] = useState(false);
@@ -10,10 +11,11 @@ const ProjectItem = ({ item }) => {
   return (
     <div className="project__card" key={item.id}>
       <div className="project__img-container" onClick={() => toggleTab(true)}>
-        <img
+        <LazyLoadImage
           src={item.image}
           alt="project small screenshot"
           className="project__img"
+          effect="blur"
         />
         <div className="project__img-layer">
           <p className="project__img-layer__text">Read More</p>
@@ -22,7 +24,7 @@ const ProjectItem = ({ item }) => {
       <h3 className="project__title">{item.title}</h3>
       <a href={item.url} className="project__button" target="_blank">
         Demo
-        <i class="bx bx-chevron-right project__button-icon"></i>
+        <i className="bx bx-chevron-right project__button-icon"></i>
       </a>
 
       <div
@@ -44,12 +46,12 @@ const ProjectItem = ({ item }) => {
             </ul>
           </div>
           <i
-            class="uil uil-times project__modal-close"
+            className="uil uil-times project__modal-close"
             onClick={() => toggleTab(false)}
           ></i>
           <a href={item.url} className="project__button" target="_blank">
             Demo
-            <i class="bx bx-chevron-right project__button-icon"></i>
+            <i className="bx bx-chevron-right project__button-icon"></i>
           </a>
         </div>
       </div>

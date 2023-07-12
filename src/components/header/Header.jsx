@@ -97,9 +97,9 @@ function Header() {
             </li>
             <li className="nav__item" onClick={toggleTheme}>
               {theme === "light-theme" ? (
-                <i class="uil uil-sun theme-toggle nav__link"></i>
+                <i className="uil uil-sun theme-toggle nav__link"></i>
               ) : (
-                <i class="uil uil-moon theme-toggle nav__link"></i>
+                <i className="uil uil-moon theme-toggle nav__link"></i>
               )}
             </li>
           </ul>
@@ -113,7 +113,7 @@ function Header() {
           className={showMenu ? "nav__toggle hide-icon" : "nav__toggle "}
           onClick={() => setShowMenu(!showMenu)}
         >
-          <i class="uil uil-bars"></i>
+          <i className="uil uil-bars"></i>
         </div>
       </nav>
     </header>
