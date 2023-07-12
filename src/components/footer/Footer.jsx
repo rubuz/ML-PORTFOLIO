@@ -33,14 +33,14 @@ const Footer = () => {
             className="footer__social-link"
             target="_blank"
           >
-            <i class="uil uil-linkedin"></i>
+            <i className="uil uil-linkedin"></i>
           </a>
           <a
             href="https://github.com/rubuz"
             className="footer__social-link"
             target="_blank"
           >
-            <i class="uil uil-github"></i>
+            <i className="uil uil-github"></i>
           </a>
         </div>
         <span className="footer__copy">

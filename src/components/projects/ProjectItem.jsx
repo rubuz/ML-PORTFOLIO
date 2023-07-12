@@ -9,7 +9,7 @@ const ProjectItem = ({ item }) => {
   };
 
   return (
-    <div className="project__card" key={item.id}>
+    <div className="project__card">
       <div className="project__img-container" onClick={() => toggleTab(true)}>
         <LazyLoadImage
           src={item.image}
