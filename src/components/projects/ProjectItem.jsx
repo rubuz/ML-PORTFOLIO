@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { v4 } from "uuid";
 
 const ProjectItem = ({ item }) => {
   const [toggleState, setToggleState] = useState(false);
@@ -41,7 +42,7 @@ const ProjectItem = ({ item }) => {
             <p className="tech-title">Stack:</p>
             <ul>
               {item.modal.tech.map((tech) => (
-                <li>{tech}</li>
+                <li key={v4()}>{tech}</li>
               ))}
             </ul>
           </div>
