@@ -1,7 +1,7 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./about.css";
-import PortraitImg from "../../assets/portrait1.jpg";
+import PortraitImg from "../../assets/portrait1.webp";
 import CV from "../../assets/CV6-pdf.pdf";
 import MyInfo from "./MyInfo";
 
