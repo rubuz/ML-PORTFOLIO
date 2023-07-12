@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProjectItem = ({ item }) => {
   const [toggleState, setToggleState] = useState(false);
@@ -10,10 +11,11 @@ const ProjectItem = ({ item }) => {
   return (
     <div className="project__card">
       <div className="project__img-container" onClick={() => toggleTab(true)}>
-        <img
+        <LazyLoadImage
           src={item.image}
           alt="project small screenshot"
           className="project__img"
+          effect="blur"
         />
         <div className="project__img-layer">
           <p className="project__img-layer__text">Read More</p>

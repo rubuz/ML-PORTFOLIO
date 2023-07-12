@@ -3,6 +3,7 @@ import "./about.css";
 import PortraitImg from "../../assets/portrait1.jpg";
 import CV from "../../assets/CV6-pdf.pdf";
 import MyInfo from "./MyInfo";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
   return (
@@ -10,7 +11,12 @@ const About = () => {
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My introduction</span>
       <div className="about__container container grid">
-        <img src={PortraitImg} className="about__img" alt="portrait of me" />
+        <LazyLoadImage
+          src={PortraitImg}
+          className="about__img"
+          alt="portrait of me"
+          effect="blur"
+        />
         <div className="about__data">
           <MyInfo />
 
