@@ -4,7 +4,6 @@ import "./about.css";
 import PortraitImg from "../../assets/portrait1.jpg";
 import CV from "../../assets/CV6-pdf.pdf";
 import MyInfo from "./MyInfo";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
   return (
