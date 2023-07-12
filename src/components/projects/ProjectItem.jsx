@@ -50,7 +50,12 @@ const ProjectItem = ({ item }) => {
             className="uil uil-times project__modal-close"
             onClick={() => toggleTab(false)}
           ></i>
-          <a href={item.url} className="project__button" target="_blank">
+          <a
+            href={item.url}
+            className="project__button"
+            target="_blank"
+            aria-label="Linke to project or demo project"
+          >
             Demo
             <i className="bx bx-chevron-right project__button-icon"></i>
           </a>

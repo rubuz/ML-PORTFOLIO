@@ -33,7 +33,12 @@ const About = () => {
             organization I work with.
           </p>
 
-          <a download="" href={CV} className="button button--flex">
+          <a
+            download=""
+            href={CV}
+            className="button button--flex"
+            aria-label="Download my CV in pdf format"
+          >
             Download CV <i className="uil uil-file-export button__icon"></i>
           </a>
         </div>

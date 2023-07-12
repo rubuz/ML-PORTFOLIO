@@ -9,7 +9,11 @@ const ScrollUp = () => {
   });
 
   return (
-    <a href="#home" className="scrollup">
+    <a
+      href="#home"
+      className="scrollup"
+      aria-label="Button to scroll to the top of the page"
+    >
       <i className="uil uil-arrow-up scrollup__icon"></i>
     </a>
   );

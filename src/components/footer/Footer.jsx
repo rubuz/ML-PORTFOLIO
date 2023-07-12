@@ -25,6 +25,7 @@ const Footer = () => {
             href="https://www.instagram.com/rubuz88/"
             className="footer__social-link"
             target="_blank"
+            aria-label="Link to my Instagram profile"
           >
             <i className="uil uil-instagram"></i>
           </a>
@@ -32,6 +33,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/matjaz-lovenjak/"
             className="footer__social-link"
             target="_blank"
+            aria-label="Link to my LinkedIn profile"
           >
             <i className="uil uil-linkedin"></i>
           </a>
@@ -39,6 +41,7 @@ const Footer = () => {
             href="https://github.com/rubuz"
             className="footer__social-link"
             target="_blank"
+            aria-label="Link to my GitHub profile and repository"
           >
             <i className="uil uil-github"></i>
           </a>
