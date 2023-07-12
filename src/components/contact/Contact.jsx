@@ -32,7 +32,7 @@ const Contact = () => {
             className="contact__form"
           >
             <div className="contact__form-div">
-              <label htmlFor="" className="contact__form-tag">
+              <label htmlFor="name" className="contact__form-tag">
                 Name
               </label>
               <input
@@ -43,7 +43,7 @@ const Contact = () => {
               />
             </div>
             <div className="contact__form-div">
-              <label htmlFor="" className="contact__form-tag">
+              <label htmlFor="email" className="contact__form-tag">
                 Email
               </label>
               <input
@@ -54,12 +54,12 @@ const Contact = () => {
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label htmlFor="" className="contact__form-tag">
+              <label htmlFor="area" className="contact__form-tag">
                 Name
               </label>
               <textarea
                 name="area"
-                id=""
+                id="area"
                 cols="30"
                 rows="10"
                 className="contact__form-input"
